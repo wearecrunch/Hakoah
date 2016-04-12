@@ -1,0 +1,14 @@
+.owl-carousel {
+	background-color: rgba(13, 29, 49, 0.2);
+}
+
+.logo a {
+	background: url("../img/preview/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	padding-left: 70px;
+}
+
+.shrink .logo a {
+  background-size: 19% auto;
+  line-height: 1em;
+  padding-left: 40px;
+}

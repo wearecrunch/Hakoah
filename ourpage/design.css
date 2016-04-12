@@ -1,0 +1,91 @@
+.timeline {
+    float: left;
+    width: 100%;
+}
+.timeline .post-header {margin-bottom: 15px;}
+.timeline .media-body {
+    padding-bottom: 25px; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    float: left;
+    width: 70%;
+}
+.timeline .post-media {
+    float: left;
+}
+.timeline .post-media.pull-left {margin-right: 60px;}
+@media (max-width: 1024px) {
+    .timeline .post-media.pull-left {margin-right: 30px;}
+}
+@media (max-width: 767px) {
+    .timeline .post-media {
+        float: none !important;
+        width: 110px !important;
+        margin-left: auto !important;
+        margin-right: auto !important ;
+    }
+}
+.timeline .post-wrap + .post-wrap {margin-top: 30px;}
+.timeline .post-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0045a1;
+    /*border-bottom: solid 1px #d2d2dc;*/
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.timeline .post-title a {color: #0045a1;}
+.timeline .post-title a:hover {color: #000000;}
+.timeline .post-meta {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #293239;
+    margin-bottom: 10px;
+}
+.timeline .post-meta a .fa {color: #0045a1;}
+.timeline .post-meta a:hover .fa {color: #293239;}
+.timeline .post-meta .fa-stack {line-height: 32px; height: 32px; width: 32px;}
+.timeline .post-meta .fa-stack-2x {line-height: 32px; font-size: 32px;}
+.timeline .post-meta .fa-stack-1x {line-height: 32px; font-size: 16px;}
+.timeline .post-excerpt {
+    line-height: 24px;
+}
+.timeline .post-readmore {
+    color: #293239;
+    text-align: left;
+}
+.timeline .post-readmore a {color: #293239;}
+.timeline .post-readmore a:hover {color: #0045a1;}
+.timeline .post-readmore .fa {
+    /*width: 18px;*/
+    /*text-align: center;*/
+}
+
+.timeline .post-header {
+    margin-top: 0px;
+}
+
+.timeline .media {
+    overflow: hidden;
+}
+
+.post-wrap {
+    border-bottom: 1px solid #eee;
+}
+
+.post-wrap:last-child {
+    border-bottom: 0px;
+} 
+
+.header-med-body {
+    padding-bottom: 25px; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    float: left;
+    width: 66%;
+}
+
+.pull-right {
+    float: right;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery YouTube Popup Player Plugin</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css"
+		href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.youtubepopup.min.js"></script>
+    <style>
+		#dialog-modal {
+			width: 100% !important;
+			height: 500px !important;
+			padding: 0 !important;
+		}
+		
+		html { 
+		  background: url(back.jpg) no-repeat left top fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+		
+		.ui-widget-overlay {
+			background: none repeat scroll 0 0 #000;
+			opacity: 0.58;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="dialog-modal" style="display:none"></div>
+
+	<script src="http://www.youtube.com/player_api"></script>
+	
+	<script>
+    
+		function Show() {
+			$( "#dialog:ui-dialog" ).dialog( "destroy" );
+			$( "#dialog-modal" ).dialog({
+				height: 550,
+				width: 590,
+				modal: true
+			});
+		}
+		$(function () {
+			
+			Show();
+			$.getScript("https://www.youtube.com/iframe_api", onYouTubePlayerAPIReady);
+			// create youtube player
+			var player;
+			function onYouTubePlayerAPIReady() {
+				player = new YT.Player('dialog-modal', {
+				  height: '500',
+				  width: '570',
+				  videoId: 'pPCOvGHhg_s',
+				  events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				  }
+				});
+			}
+
+			// autoplay video
+			function onPlayerReady(event) {
+				event.target.playVideo();
+			}
+
+			// when video ends
+			function onPlayerStateChange(event) {        
+				if(event.data === 0) {            
+					window.location = "http://brainifyit.com/projects/hakoah/";
+				}
+			}
+		
+		});
+	</script>
+
+</body>
+</html>

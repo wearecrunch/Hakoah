@@ -1,0 +1,561 @@
+body,td,th {
+	font-family:Avenir, Helvetica, Century Gothic, Arial;
+	font-size: 12px;
+	color: #686868;
+}
+
+body {
+	background-image:  url('./images/back_repeat.png');
+	background-repeat: repeat-x;
+	background-position: top left;
+	background-color:#0045a1;
+	margin: 0;
+	color:#686868;
+}
+
+a img {
+	border: none;
+	}
+
+::selection {
+	background: #000;
+	color: white;
+	text-shadow: none;
+}
+
+a:link, a:visited, a:active {
+	color: #686868;
+	text-decoration:underline;
+}
+a:hover {
+	color: #1c66d2;
+	text-decoration: none;
+}
+hr {
+	margin: 15px 0px 15px 0px;
+	color: #036;
+	height: 1px;
+	width: 100%;
+}
+
+h1 {
+	font-size: 32px;
+	text-transform:uppercase;
+	color:#1c66d2;
+	border-bottom:dashed 1px #ccc;
+	padding-bottom:10px;
+}
+
+h1 a {
+	font-size: 32px;
+	text-transform:uppercase;
+	color:#1c66d2;
+	border-bottom:dashed 1px #ccc;
+	padding-bottom:10px;
+}
+
+h2 {
+	font-size: 20px;
+	text-transform:uppercase;
+	color:#1c66d2;
+	padding-bottom:05px;
+}
+
+h3 {
+	font-size: 15px;
+	text-transform:uppercase;
+	color:#1c66d2;
+}
+
+#wrapper {
+	width: 960px;
+	min-height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.textwrapper {
+	line-height: 20px;
+	font-size:14px;
+}
+
+
+/* HEADER */
+
+#header {
+	float: left;
+	width: 960px;
+	height: 80px;
+}
+
+#logotop {
+	background-image: url('./images/smalllogo.png');
+	margin-right: 7px; 
+	color: transparent;
+	display: block;
+	float: left;
+	color: #fff;
+	margin:5px 0 0 0;
+	height:116px;
+	width:545px;
+}
+
+#callme {
+	float: left;
+	width: 940px;
+	height: 100px;
+	padding: 10px 0 20px 0;
+	margin: 30px 10px 0 10px;
+	background-color:#F8F8F8; 
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	border-right: none;
+	border-left: none;
+	display:none;
+}
+#callme h1 {
+	font-size: 32px;
+	line-height: 12px;
+}
+#callmetext, #callmebuttonwrap {
+	float: left;
+
+}
+
+#callmebutton {
+	margin: 25px 0 0 120px;
+	font-size: 18px;
+	height: 60px;
+	width: 180px;
+	float: left;
+	color: #fff;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px; }
+
+/* CONTENT */
+#boxes {
+	float: left;
+	width: 940px;
+	margin: 50px 10px 0 10px;
+	display:none;
+}
+
+#box1 {
+	float: left;
+	width: 300px;
+	margin: 0 10px 0 0;
+	min-height: 180px;
+}
+
+#box2 {
+	float: left;
+	width: 300px;
+	margin: 0 10px 0 10px;
+	min-height: 180px;
+}
+
+#box3 {
+	float: left;
+	width: 300px;
+	margin: 0 0 0 10px;
+	min-height: 180px;
+}
+
+.boxheader {
+	width: 300px;
+	background: #ff6251; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff6251 0%, #bf0000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6251), color-stop(100%,#bf0000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff6251 0%,#bf0000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff6251 0%,#bf0000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff6251 0%,#bf0000 100%); /* IE10+ */
+background: linear-gradient(top,  #ff6251 0%,#bf0000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6251', endColorstr='#bf0000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.boxheader:hover {
+	background: #000;
+}
+
+.boxbackground {
+}
+
+.boxh3 {
+	font-size: 21px;
+	padding: 10px 0 7px 30px;
+	margin: 0;
+	color: #fff;
+}
+
+.boxlink {
+	width: 300px;
+	height: 136px;
+	display: block;
+}
+#box1 .boxlink {
+	background-image:  url('./images/pic_1.jpg');
+}
+#box2 .boxlink {
+	background-image:  url('./images/pic_2.jpg');
+}
+#box3 .boxlink {
+	background-image:  url('./images/pic_3.jpg');
+}
+
+#box1:hover, #box1:hover .boxheader, #box2:hover, #box2:hover .boxheader, #box3:hover, #box3:hover .boxheader  {
+	background: #000;
+}
+
+#content {
+	float: left;
+	width: 598px;
+	margin-top:20px;
+	background-image: url('./images/content_shadow_middle.png');
+	background-repeat:repeat-y;
+	background-position: 0 px;
+	margin-left:-04px;
+	padding:15px 40px 40px 40px;
+}
+
+#rightcontent {
+	float: right;
+	width: 300px;
+	min-height: 100px;
+}
+
+#middlecontent {
+	float: left;
+	width: 580px;
+	min-height: 347px;
+	font-size:13px;
+}
+
+.toph1box {
+	float: left;
+	width: 580px;
+}
+
+.toph1box2 {
+	float: left;
+	width: 300px;
+}
+
+.toph1box2 h1, .toph1box h1 {
+	font-size: 26px;
+}
+
+#contentleftwrapper {
+	float: left;
+	width: 580px;
+	margin-top:px;	
+}
+
+#contentrightwrapper {
+	background-image: url('./images/fb_news_bg.png');
+	background-repeat: no-repeat;
+	background-position: 0 px;
+	float: right;
+	width: 283px;
+	height: 525px;
+	margin-top:144px;
+}
+
+#news {
+	position:relative;
+	margin:40px 0 0 20px;
+	width:235px;
+}
+
+/* SLIDESHOW */
+#slideshowwrapper {
+	background-image: url('./images/slideshow_bg.png');
+	background-repeat: no-repeat;
+	background-position: 0 px;
+	float: left;
+	width: 668px;
+	height: 333px;
+	margin-left:-04px;
+	margin-top:144px;
+}
+#slideshow {
+	width: 660px;
+	height: 330px;
+	padding: 0;
+	margin:  0 auto;
+	overflow: hidden;
+} 
+
+#slideshow img {
+	width: 660px;
+	height: 330px;
+	margin-top:4px;
+}
+
+#slideshownav {
+	color: #000;
+	position: relative;
+	z-index: 50;
+	width:300px;
+	top:-30px;
+	left:20px;
+	float:left;
+}
+
+#slideshownav a {
+	background-image: url('./images/slide_button.png');
+	margin-right: 7px; 
+	color: transparent;
+	display: block;
+	width: 16px;
+	height: 17px;
+	float: left;
+}
+
+#slideshownav a:hover {
+	background-image: url('./images/slide_button.png');
+	background-position: 0 17px;
+}
+
+#slideshownav a.activeSlide {
+	background-image: url('./images/slide_button.png');
+	background-position: 0 17px;
+}
+
+/* MENU */
+#header_menu {position: absolute; margin-left: 20px;background:#555;}
+#header_menu li {line-height: normal;}
+ul#header_menu  {z-index: 10; clear: both;}
+
+#nav {
+	height: 100%;
+	float: left;
+	margin-top:10px;
+	z-index:50;
+}
+#nav ul {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	font-size: 14px; 
+	width: auto;
+	text-transform:uppercase;
+	position: relative; /* Fix the Stupid IE6 Bug */
+	z-index:51;
+	}
+	
+#nav ul li {
+	float: left; 
+	color: #fff; 
+	line-height:65px;
+	border-right:1px solid #303636; 
+	z-index:52;
+	}
+	
+#nav ul li a {
+	color: #fff; 
+	display: block; 
+	text-decoration:none; 
+	padding:0 15px 0 15px;
+	z-index:53;
+	font-weight:bold;
+	}
+
+#nav ul li:last-child {border-right:none;}
+
+/* Root Level Link Formatting */
+#nav ul li a:hover, #nav li a:focus {color: #fff; background:#515757; z-index:54;}
+#nav li a:active, #nav ul li a.active {color: #fff;}
+#nav ul li.menu-expand.menu-sibling a:active, #nav li.menu-expand.menu-sibling a:focus {}
+
+
+/* Current page Customisations*/
+#nav li.menu-current a		{color: #fff; background:#515757; z-index:55;}
+
+/* 2nd Child menu */
+#nav .menu li ul {position: absolute; width: 200px; margin-top:-25px; display: none; text-transform: none; font-size: 14px; z-index:56;}
+
+#nav .menu li ul li {
+	position:relative;
+	width: 200px; 
+	text-align: left; 
+	margin: 0; 
+	padding: 0; 
+	line-height:35px; 
+	z-index:57;
+	}
+
+#nav .menu li ul a {
+	position:relative;
+	width: 200px; 
+	color: #fff; 
+	border: 0; 
+	background-color:#515757; 
+	z-index:58;  
+}
+
+/* 2nd Child link hover */
+#nav .menu li ul a:hover {color:#fff; background-color:#2c3132;}
+
+/* Show and hide */
+#nav .menu li:hover ul, #nav .menu li a:focus ul, #nav .menu li.subMenu ul {display: block;}
+#nav .menu li ul ul { display: none;}
+#nav .menu li:hover ul ul, #nav .menu li.subMenu ul ul {display: none;}
+#nav .menu li:hover ul, #nav .menu li li:hover ul, #nav .menu li.subMenu ul, #nav .menu li li.subMenu ul {display: block;}
+
+
+/* 3rd Child Menu Appreances */
+#nav .menu li ul li ul li a 	{
+	position:relative;
+	width: 200px;
+	padding:0 0 0 15px; 
+	color: #fff; 
+	border-left:#707070 1px solid;
+	z-index:59;
+	}
+
+/* Positioning the Pop-out Drops */
+#nav li li {position: relative; top: 19px; margin-top:50px; z-index:60;}
+
+#nav ul ul ul {
+	position: relative;
+	top: 5px;
+	margin-left:230px;
+	z-index:61;
+}
+
+/* BUTTONS GRADIENT -- CHANGE AT -- http://www.colorzilla.com/gradient-editor/ */
+#nav ul li a {
+}
+
+#nav ul li a:hover {
+}
+
+/* FOOTER */
+#footer {
+	float: left;
+	color:#686868;
+	background-color:#ebebeb;
+	width: 100%;
+	min-height:175px;
+	border-top: solid #ccc 1px;
+	margin:auto auto;
+	margin-top:50px;
+	padding-bottom:50px;
+}
+
+#footercontentwrapper {
+	position:relative;
+	width:960px;
+	height:175px;
+	background-color:none;
+	margin:auto auto;
+}
+
+#footercontentleft {
+	position:relative;
+	float:left;
+	width:300px;
+	height:140px;
+	background-color:none;
+	font-size:14px;
+	line-height:18px;
+	margin-top:20px;
+}
+
+#footercontentcenter {
+	position:relative;
+	float:left;
+	width:250px;
+	height:140px;
+	background-color:none;
+	padding-left:30px;
+	font-size:14px;
+	line-height:18px;
+	margin-top:20px;
+}
+
+#footercontentright {
+	position:relative;
+	float:right;
+	width:200px;
+	height:140px;
+	background-color:none;
+	border-left:solid 1px #d9d8d8;
+	padding-left:30px;
+	margin-top:20px;
+}
+
+#facebookicon {
+	color: #000;
+	position: relative;
+	z-index: 50;
+	width: 58px;
+	height:61px;
+	left: px;
+	float:left;
+}
+
+#facebookicon a {
+	background-image: url('./images/facebookicon.png');
+	margin-right: 7px; 
+	color: transparent;
+	display: block;
+	width: 58px;
+	height: 61px;
+	float: left;
+	border:none;
+}
+
+#facebookicon a:hover {
+	background-image: url('./images/facebookicon.png');
+	background-position: 0 64px;
+}
+
+.fb-like-box {
+	margin-left:04px;
+	margin-top:04px;
+}
+
+#crunchlogo {
+	float: left;
+	color: #fff;
+	margin:0 0 0 0;
+	height:33px;
+	width:75px;
+}
+
+#crunchlogo a {
+	background-image: url('./images/crunchlogo.png');
+	margin-right: 7px; 
+	color: transparent;
+	display: block;
+	width: 75px;
+	height: 33px;
+	float: left;
+	background-position: 0 0px;
+}
+
+#crunchlogo a:hover {
+	background-image: url('./images/crunchlogo.png');
+	background-position: 0 33px;
+}
+
+.loop-header {
+	margin-top:110px;
+}
+
+.post-header {
+	margin-top:110px;
+}
+
+.search_box {
+	position:relative;
+	margin-top:17px;
+	float:right;
+	height:25px;
+	width:200px;
+}
