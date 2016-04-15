@@ -92,14 +92,36 @@
 	</div>
 	<div id="slideshowwrapper">
 		<div id="slideshow">
-			<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_1.jpg" />
-			<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_2.jpg" />
-            <img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_3.jpg" />
-            <img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_4.jpg" />
-            <img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_5.jpg" />
-            <img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_6.jpg" />
-            <img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_7.jpg" />
-            <img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_8.jpg" />
+		<?php
+			$url = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+			if (strpos($url, "tages-70-ar.php") !== false){
+		?>
+				<!-- images for Tages 70 år goes here -->
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_1.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_2.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_3.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_4.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_5.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_6.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_7.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_8.jpg" />
+
+		<?php
+			} else {
+		?>
+				<!-- images for frontpage goes here -->
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_1.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_2.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_3.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_4.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_5.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_6.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_7.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_8.jpg" />
+		<?php		
+			}
+		?>
+			
 		</div>
 		<div id="slideshownav">
 		</div>
