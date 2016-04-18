@@ -97,14 +97,18 @@
 			if (strpos($url, "tages-70-ar.php") !== false){
 		?>
 				<!-- images for Tages 70 år goes here -->
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_1.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_2.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_3.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_4.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_5.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_6.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_7.jpg" />
-				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/slide_8.jpg" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/Tage2.jpg.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/Henning-Fodbold-II.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/_kl.-11.19.42.png.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/img034.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-09.31.40.png.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-09.42.41.png.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-11.20.35.png.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-11.21.39.png.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.09.22.50.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-16.14.36.png.png" />
+
+
 
 		<?php
 			} else {
