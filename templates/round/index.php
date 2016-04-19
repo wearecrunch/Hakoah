@@ -94,7 +94,7 @@
 		<div id="slideshow">
 		<?php
 			$url = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-			if (strpos($url, "tages-70-ar.php") !== false){
+			if (strpos($url, "livtag-med-tage---portraet-af-tage-skolnik.php") !== false){
 		?>
 				<!-- images for Tages 70 år goes here -->
 				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/Tage2.jpg.png" />
