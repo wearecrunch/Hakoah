@@ -107,6 +107,7 @@
 				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-11.21.39.png.png" />
 				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.09.22.50.png" />
 				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/kl.-16.14.36.png.png" />
+				<img src="<?php echo TEMPLATE_DIR; ?>/slideshow/newimage-version2.png" />
 
 
 
